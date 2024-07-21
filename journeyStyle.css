@@ -1,0 +1,469 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Varela Round", arial, Helvetica, sans-serif;;
+}
+
+html{
+    scrollbar-color: #777 rgb(40, 40, 40);
+}
+
+body{
+    overflow-x: hidden;
+}
+
+#navBar{
+    height: 80px;
+    box-shadow: 0px 2px 10px gray;
+    background-color: transparent;
+    z-index: 999px;
+    position: fixed;
+    width: 100%;
+    max-width: 100%;
+    backdrop-filter: blur(1px);
+    transition: 0.4s ease transform;
+}
+
+
+.navItems{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.btnsList{
+    list-style-type: none;
+}
+
+.navBtns ul{
+    width: 30vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+}
+
+.btnsList a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease-in;
+}
+
+.btnsList a:hover{
+    color: grey;
+}
+
+.btnsList a:active{
+    color: darkgray
+}
+
+.fa-house{
+    color: white;
+    transition: all 0.3s;
+}
+
+.fa-house:hover{
+    color: gray
+}
+
+.fa-house:active{
+    color: darkgray
+}
+
+.hidden {
+    transform: translateY(-100%);
+}
+
+.selected a{
+    color: darkgray;
+}
+
+.hero{
+    /* height: 100%; */
+    color: whitesmoke;
+    height: 100%;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proposalContainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.proposalTitle{
+    color: white;
+    text-align: center;
+}
+
+.proposal{
+    border-top: 0.5px white solid;
+    border-bottom: 0.5px white solid;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-top: 1rem;
+}
+
+.atFirst{
+    width: 45%;
+    /* text-align: center; */
+}
+
+.atFirst h2{
+    margin-bottom: 1rem;
+    color: greenyellow;
+    text-align: center;
+}
+
+.atFirst p{
+    margin-bottom: 1rem;
+    margin-left: 10px;
+}
+
+.verticalLine{
+    border: 1px white solid;
+    justify-self: center;
+}
+
+.now{
+    width: 45%;
+    margin-right: 0px;
+}
+
+.now h2{
+    text-align: center;
+    margin-bottom: 1rem;
+    color: greenyellow;
+}
+
+.now p{
+    margin-left: 10px;
+    margin-bottom: 1rem;
+}
+
+.b4Journey{
+    width: 100%;
+}
+
+.beforeStarting{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    width: auto;
+}
+
+.beforeStarting h1{
+    color: white;
+}
+
+.beforeStarting p{
+    margin-top: 1rem;
+}
+
+.beforeStarting img{
+    margin-top: 1rem;
+    width: 50%;
+}
+
+
+.grayBg{
+    background-color: rgb(30,30,30);
+}
+
+
+.theJourney{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+}
+
+.journeyTitle h1{
+    color: white;
+}
+
+#journey3{
+    background-color: green;
+    text-align: center;
+    width: 15rem;
+    border-radius: 5px;
+    margin-bottom: 3rem;
+}
+
+.eachWeek{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    margin-bottom: 5rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.weekGrp{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    width: 85vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wkNumber h2{
+    color: greenyellow;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.video{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin-left: 0px;
+    margin-right: 2rem;
+}
+
+.video video{
+    width: 560px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.video iframe{
+    padding-bottom: 1rem;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.lessonTitle h2{
+    margin-bottom: 1rem;
+    color: greenyellow;
+}
+
+
+.journeyLesson{
+    width: 80%;
+    margin-top: 1rem;
+}
+
+.pics{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.journeyLesson ul li{
+    margin-bottom: 10px;
+}
+
+.journeyLesson ul li :nth-child(1){
+    margin-top: 10px;
+}
+
+.journeyLesson img{
+    width: 100%;
+}
+
+.consultLesson{
+    display: flex;
+    justify-content: space-between;
+}
+
+.consultLesson h4{
+    margin-bottom: 1rem;
+}
+
+.future{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 5rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nextStep{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85vw;
+}
+
+.nextStep h1{
+    margin-bottom: 1rem;
+    color: greenyellow;
+}
+
+.nextStep ul li{
+    margin-bottom: 10px;
+}
+
+.nextStep p{
+    margin-bottom: 10px;
+}
+
+.nextStep img{
+    width: 30rem;
+}
+
+
+
+
+footer{
+    background-color: black;
+    color: white;
+    width: 100%;
+    margin-top: 8rem;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.socials{
+    margin-left: 3rem;
+    display: flex;
+}
+
+.fa-youtube{
+    margin-right: 10px;
+}
+
+.youtube a:hover{
+    color: darkred
+}
+
+.fa-brands.fa-x-twitter :hover{
+    color: gray;
+}
+
+.navigation{
+    margin-right: 3rem;
+    margin-left: 0px;
+    width: 100%;
+}
+
+.navigation h3{
+    text-align: center;
+}
+
+.footCategories{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25rem;
+    margin-bottom: 1rem;
+}
+
+
+.footCategories ul li{
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+.footCategories ul li a{
+    text-decoration: none;
+    color: rgb(213, 214, 213);
+    transition: all 0.2s;
+}
+
+.footCategories ul li a:hover{
+    color: white;
+}
+
+.footCategories ul li a:active{
+    color:gray;
+}
+
+.footCategories h4{
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+.load-9 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(20, 20, 20);
+}
+  
+.spinner {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    margin: 0 auto;
+  }
+  
+.bubble-1,
+.bubble-2 {
+    position: absolute;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: white;
+}
+  
+.bubble-2 {
+    top: auto;
+    bottom: 0;
+}
+  
+.load-9 .spinner {
+    animation: loadingI 2s linear infinite;
+}
+.load-9 .bubble-1,
+.load-9 .bubble-2 {
+    animation: bounce 2s ease-in-out infinite;
+}
+.load-9 .bubble-2 {
+    animation-delay: -1s;
+}
+  
+  
+@keyframes loadingI {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+@keyframes bounce {
+    0%,
+    100% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1);
+    }
+  }
+  

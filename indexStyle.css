@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url(Images/blueShirtMe.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.backgroundFilter{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.386);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainPageText{
+    font-size: 3rem;
+    color: whitesmoke;
+    margin-bottom: 1rem;
+}
+
+.mainPageStuff{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.beginBtn{
+    width: 6rem;
+    height: 2.5rem;
+    border: 1px white solid;
+    border-radius: 15px;
+    color: whitesmoke;
+    background-color: transparent;
+    transition: all 0.8s ease;
+}
+
+.beginBtn:hover{
+    transform: scale(1.1);
+    background-color: whitesmoke;
+    color: black;
+    cursor: pointer;
+}
+
+.beginBtn:active{
+    background-color: lightgray;
+}

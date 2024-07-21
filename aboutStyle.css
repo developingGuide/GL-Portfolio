@@ -1,0 +1,419 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Varela Round", arial, Helvetica, sans-serif;
+}
+
+
+html{
+    scrollbar-color: #777 rgb(40, 40, 40);
+}
+
+#navBar{
+    height: 80px;
+    box-shadow: 0px 2px 10px gray;
+    background-color: transparent;
+    z-index: 999px;
+    position: fixed;
+    width: 100%;
+    max-width: 100%;
+    backdrop-filter: blur(1px);
+    transition: 0.4s ease transform;
+}
+.navItems{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.btnsList{
+    list-style-type: none;
+}
+
+.navBtns ul{
+    width: 30vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.btnsList a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease-in;
+}
+
+.btnsList a:hover{
+    color: grey;
+}
+
+.btnsList a:active{
+    color: darkgray
+}
+
+.fa-house{
+    color: white;
+    transition: all 0.3s;
+}
+
+.fa-house:hover{
+    color: gray
+}
+
+.fa-house:active{
+    color: darkgray
+}
+
+.selected a{
+    color: darkgray;
+}
+
+.hero{
+    height: 100%;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.hidden {
+    transform: translateY(-100%);
+}
+
+.selfIntroTitle{
+    margin-top: 100px;
+    color: White;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+.selfIntro{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+img{
+    height: 350px;
+}
+
+.selfIntroPhoto{
+    margin-right: 3rem;
+    margin-left: auto;
+}
+
+.selfIntroText{
+    color: white;
+    margin-left: 3rem ;
+    width: 50%;
+}
+
+.selfIntroText h1{
+    margin-bottom: 1rem;
+    color: greenyellow;
+}
+
+.selfIntroText p{
+    margin-bottom: 1rem;
+}
+
+.selfIntroText h4{
+    margin-bottom: 1rem
+}
+
+.selfIntroText ul li{
+    margin-bottom: 0.5rem;
+}
+
+.whyGL{
+    background-color: rgb(30, 30, 30);
+    margin-top: 5rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.whyGLTitle{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px black;
+}
+
+
+.whyGLText{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+
+.whyGLText h3{
+    text-align: center;
+    margin-bottom: 1rem;
+    color: greenyellow;
+    text-shadow: 0px 2px black;
+}
+
+.whyGLText p{
+    text-align: center;
+    width: 15rem;
+}
+
+
+.aboutProject{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutProjectTitle{
+    margin-top: 5rem;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px black;
+}
+
+.aboutProjectText{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 3rem;
+    margin-left: 1rem;
+    width: auto
+}
+
+
+
+.aboutProjectPhotos{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.CODM{
+    margin-left: 3rem;
+}
+
+.CODM img{
+    width: 45vw;
+}
+
+
+.plannedBusiness{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 3rem;
+    background-color: rgb(30, 30, 30);
+}
+
+.plannedBusiness h1{
+    color: greenyellow;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px black;
+}
+
+.plannedBusiness p{
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.plannedBusiness ul{
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.plannedBusiness .skoolImgs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.skoolImgs #skool1{
+    width: 550px;
+    height: auto;
+}
+
+.skoolImgs #skool2{
+    width: 600px;
+    height: auto;
+}
+
+.learningContract{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    padding-top: 10px;
+    padding-bottom:10px;
+}
+
+.learningContract h1{
+    margin-bottom: 1rem;
+    color: greenyellow;
+}
+
+.learningContractPics{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.learningContractPics img{
+    width: 50vw;
+    height: auto;
+}
+
+
+
+
+footer{
+    background-color: black;
+    color: white;
+    width: 100%;
+    margin-top: 8rem;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.socials{
+    margin-left: 3rem;
+    display: flex;
+}
+
+.fa-youtube{
+    margin-right: 10px;
+}
+
+.youtube a:hover{
+    color: darkred
+}
+
+.fa-brands.fa-x-twitter :hover{
+    color: gray;
+}
+
+.navigation{
+    margin-right: 3rem;
+    margin-left: 0px;
+    width: 100%;
+}
+
+.navigation h3{
+    text-align: center;
+}
+
+.footCategories{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25rem;
+    margin-bottom: 1rem;
+}
+
+
+.footCategories ul li{
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+.footCategories ul li a{
+    text-decoration: none;
+    color: rgb(213, 214, 213);
+    transition: all 0.2s;
+}
+
+.footCategories ul li a:hover{
+    color: white;
+}
+
+.footCategories ul li a:active{
+    color:gray;
+}
+
+.footCategories h4{
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+.load-9 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(20, 20, 20);
+}
+  
+.spinner {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    margin: 0 auto;
+  }
+  
+.bubble-1,
+.bubble-2 {
+    position: absolute;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: white;
+}
+  
+.bubble-2 {
+    top: auto;
+    bottom: 0;
+}
+  
+.load-9 .spinner {
+    animation: loadingI 2s linear infinite;
+}
+.load-9 .bubble-1,
+.load-9 .bubble-2 {
+    animation: bounce 2s ease-in-out infinite;
+}
+.load-9 .bubble-2 {
+    animation-delay: -1s;
+}
+  
+  
+@keyframes loadingI {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+@keyframes bounce {
+    0%,
+    100% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1);
+    }
+  }
+  
