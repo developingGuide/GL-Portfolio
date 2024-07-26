@@ -24,8 +24,8 @@ html{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
 .btnsList{
@@ -77,6 +77,49 @@ html{
     color: darkgray
 }
 
+
+
+.fa-bars{
+    color: rgba(255, 255, 255, 0.573);
+    cursor: pointer;
+}
+
+.fa-bars .fa-xl :hover{
+    color: white;
+    
+}
+
+.dropBar{
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 80px;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.308);
+    height: calc(100vh - 80px);
+}
+
+.dropBar ul{
+    margin-top: 1rem;
+}
+
+.dropBar ul li{
+    list-style-type: none;
+    margin-bottom: 1rem;
+    border-left: 1px white solid;
+    padding-left: 1rem;
+    width: 100vw;
+}
+
+.dropBar ul li a{
+    width: 100;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+
 .hero{
     color: whitesmoke;
     height: 100%;
@@ -91,6 +134,8 @@ html{
     display: flex;
     flex-direction: column;
     margin-top: 100px;
+    align-items: center;
+    width: 100%;
 }
 
 
@@ -98,6 +143,7 @@ h1{
     margin-bottom: 1rem;
     color: greenyellow;
     text-align: center;
+    width: 85vw;
 }
 
 .future ul li{
@@ -354,3 +400,117 @@ footer{
     }
   }
   
+
+
+
+
+@media screen and (max-width: 1000px){
+    .navBtns ul a{
+        display: none;
+    }
+
+    .fa-bars{
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1001px){
+    .navBtns ul a{
+        display: flex;
+    }
+
+    .fa-bars{
+        display: none
+    }
+    
+}
+
+@media screen and (max-width:800px) {
+    .advice1Container{
+        width: 85vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .advice1Container img{
+        width: 400px;
+        height: 400px;
+    }
+
+    .futureText{
+        margin: 0;
+        width: 378px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .enjoyGL{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .contentProcess{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+
+    .contentProcessText{
+        width: 85vw;
+        margin: 0;
+    }
+
+    .contentProcessPic img{
+        width: 400px;
+
+    }
+
+}
+
+
+
+
+
+
+@media screen and (max-width:1080px) {
+    .navigation{
+        margin-right: 3rem;
+    }
+
+    .footAbout{
+        display: flex;
+        justify-content: end;
+    }
+
+    .footAbout li{
+        width: 10rem;
+    }
+
+    .footJourney{
+        display: flex;
+        justify-content: end;
+    }
+
+    .footJourney li{
+        width: 10rem;
+    }
+
+    .footAdvice{
+        display: flex;
+        justify-content: end;
+    }
+
+    .footAdvice li{
+        width: 10rem;
+    }
+    
+    .navigation{
+        padding-left: 0px;
+    }
+
+    .footCategories{
+        flex-direction: column;
+        margin-left: auto;
+    }
+}

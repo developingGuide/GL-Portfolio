@@ -30,8 +30,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
 .btnsList{
@@ -73,6 +73,7 @@ body{
     color: darkgray
 }
 
+
 .hidden {
     transform: translateY(-100%);
 }
@@ -80,6 +81,51 @@ body{
 .selected a{
     color: darkgray;
 }
+
+
+
+
+.fa-bars{
+    color: rgba(255, 255, 255, 0.573);
+    cursor: pointer;
+}
+
+.fa-bars .fa-xl :hover{
+    color: white;
+    
+}
+
+.dropBar{
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 80px;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.308);
+    height: calc(100vh - 80px);
+}
+
+.dropBar ul{
+    margin-top: 1rem;
+}
+
+.dropBar ul li{
+    list-style-type: none;
+    margin-bottom: 1rem;
+    border-left: 1px white solid;
+    padding-left: 1rem;
+    width: 100vw;
+}
+
+.dropBar ul li a{
+    width: 100;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+
 
 .hero{
     /* height: 100%; */
@@ -326,7 +372,24 @@ body{
 }
 
 .nextStep img{
-    width: 30rem;
+    width: 400px;
+    height: auto
+}
+
+.encouragements{
+    display: flex;
+    width: 85vw;
+    justify-content: space-between;
+}
+
+.encouragements1{
+    width: 400px;
+    margin-left: 5rem;
+}
+
+.encouragements2{
+    width: 400px;
+    margin-right: 5rem;
 }
 
 
@@ -466,4 +529,155 @@ footer{
       transform: scale(1);
     }
   }
+
   
+
+@media screen and (max-width: 1000px){
+    .navBtns ul a{
+        display: none;
+    }
+
+    .fa-bars{
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1001px){
+    .navBtns ul a{
+        display: flex;
+    }
+
+    .fa-bars{
+        display: none
+    }
+    
+}
+
+
+@media screen and (max-width:605px) {
+    .beforeStarting h1{
+        width: 85vw;
+        text-align: center;
+    }
+
+    .beforeStarting p{
+        width: 85vw;
+    }
+
+    .beforeStarting img{
+        width: 85vw;
+    }
+
+
+    .lessonTitle{
+        width: 85vw;
+    }
+
+    .lessonTitle h2{
+        text-align: center;
+    }
+}
+
+
+
+
+@media screen and (max-width:1080px) {
+    .navigation{
+        margin-right: 3rem;
+    }
+
+    .footAbout{
+        display: flex;
+        justify-content: end;
+    }
+
+    .footAbout li{
+        width: 10rem;
+    }
+
+    .footJourney{
+        display: flex;
+        justify-content: end;
+    }
+
+    .footJourney li{
+        width: 10rem;
+    }
+
+    .footAdvice{
+        display: flex;
+        justify-content: end;
+    }
+
+    .footAdvice li{
+        width: 10rem;
+    }
+    
+    .navigation{
+        padding-left: 0px;
+    }
+
+    .footCategories{
+        flex-direction: column;
+        margin-left: auto;
+    }
+
+    .weekGrp{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    iframe{
+        /* 560,315 */
+        height: 230px;
+        width: 409px;
+    }
+
+    .video{
+        margin: 0
+    }
+
+    .journeyLesson{
+        margin-bottom: 1rem;
+        width: 85vw;
+    }
+
+    .consultLesson{
+        flex-direction: column;
+    }
+
+    .keyPoints{
+        margin-bottom: 1rem;
+    }
+
+    .future img{
+        width: 70vw;
+    }
+
+    .nextStep{
+        align-items: center;
+    }
+
+    .nextStep p{
+        width: 70vw;
+    }
+
+    .encouragements{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .encouragements1{
+        width: 70vw;
+        margin: 0;
+    }
+
+
+
+    .encouragements2{
+        width: 70vw;
+        margin: 0;
+
+    }
+}

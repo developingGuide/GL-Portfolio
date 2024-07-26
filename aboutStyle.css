@@ -25,8 +25,8 @@ html{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
 .btnsList{
@@ -73,6 +73,51 @@ html{
     color: darkgray;
 }
 
+
+
+
+
+.fa-bars{
+    color: rgba(255, 255, 255, 0.573);
+    cursor: pointer;
+}
+
+.fa-bars .fa-xl :hover{
+    color: white;
+    
+}
+
+.dropBar{
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 80px;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.308);
+    height: calc(100vh - 80px);
+}
+
+.dropBar ul{
+    margin-top: 1rem;
+}
+
+.dropBar ul li{
+    list-style-type: none;
+    margin-bottom: 1rem;
+    border-left: 1px white solid;
+    padding-left: 1rem;
+    width: 100vw;
+}
+
+.dropBar ul li a{
+    width: 100;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+
 .hero{
     height: 100%;
     background-color: rgb(20, 20, 20);
@@ -112,6 +157,7 @@ img{
     color: white;
     margin-left: 3rem ;
     width: 50%;
+    padding-right: 2rem;
 }
 
 .selfIntroText h1{
@@ -195,6 +241,10 @@ img{
     width: auto
 }
 
+.aboutProjectText ul{
+    margin-bottom: 1rem;
+}
+
 
 
 .aboutProjectPhotos{
@@ -250,7 +300,7 @@ img{
 }
 
 .skoolImgs #skool2{
-    width: 600px;
+    width: 620px;
     height: auto;
 }
 
@@ -275,7 +325,7 @@ img{
 }
 
 .learningContractPics img{
-    width: 50vw;
+    width: 65vw;
     height: auto;
 }
 
@@ -417,3 +467,177 @@ footer{
     }
   }
   
+
+
+
+@media screen and (max-width: 768px){
+    .selfIntro{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .selfIntroText{
+        width: 400px;
+    }
+
+    .selfIntroPhoto{
+        margin: 0;
+    }
+
+    .selfIntro img{
+        width: 400px;
+        height: auto;
+    }
+    
+    .aboutProjectPhotos img{
+        width: 400px;
+        height: auto;
+    }
+
+}
+
+
+@media screen and (max-width: 900px) and (min-width: 769px){
+    .selfIntro img{
+        width: 400px;
+        height: auto;
+    }
+
+    .aboutProjectPhotos img{
+        width: 500px;
+        height: auto;
+    }
+    
+}
+
+@media screen and (max-width: 1080px){
+    .whyGLText{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .whyGLText p{
+        width: 80vw;
+        margin-bottom: 1rem;
+    }
+
+    .aboutProjectPhotos{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .CODM{
+        margin: 0
+    }
+
+
+
+    .aboutProjectPhotos p{
+        margin-bottom: 8px;
+        width: 80vw;
+    }
+
+    .aboutProjectText{
+        width: 80vw;
+        margin: 0;
+    }
+
+    .plannedBusiness .skoolImgs{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skoolImgs #skool1{
+        width: 450px;
+    }
+
+    .skoolImgs #skool2{
+        width: 450px;
+    }
+
+
+
+
+
+    .navigation{
+        margin-right: 3rem;
+    }
+
+    .footAbout{
+        display: flex;
+        justify-content: end;
+    }
+
+    .footAbout li{
+        width: 10rem;
+    }
+
+    .footJourney{
+        display: flex;
+        justify-content: end;
+    }
+
+    .footJourney li{
+        width: 10rem;
+    }
+
+    .footAdvice{
+        display: flex;
+        justify-content: end;
+    }
+
+    .footAdvice li{
+        width: 10rem;
+    }
+    
+    .navigation{
+        padding-left: 0px;
+    }
+
+    .footCategories{
+        flex-direction: column;
+        margin-left: auto;
+    }
+    
+}
+
+
+@media screen and (max-width:1200px) and (min-width:1081px){
+    .skoolImgs #skool1{
+        width: 450px;
+        height: auto;
+    }
+
+    .skoolImgs #skool2{
+        width: 500px;
+        height: auto;
+    }
+
+
+}
+
+
+
+
+@media screen and (max-width: 1000px){
+    .navBtns ul a{
+        display: none;
+    }
+
+    .fa-bars{
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1001px){
+    .navBtns ul a{
+        display: flex;
+    }
+
+    .fa-bars{
+        display: none
+    }
+    
+}
